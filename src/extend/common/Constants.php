@@ -4,6 +4,8 @@ namespace Empathy\Engine\Constants;
 
 use Empathy\Engine\Wrappers\NetClass;
 
+global $APPLICATION;
+
 $env 	= new NetClass ('System.Environment', 'mscorlib');
 $params = $env->getCommandLineArgs ()->list;
 

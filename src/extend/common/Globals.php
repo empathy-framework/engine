@@ -8,6 +8,8 @@ use Empathy\Engine\Additions;
 
 register_superglobals ('APPLICATION', 'SCREEN');
 
+global $APPLICATION, $SCREEN;
+
 /**
  * Переменная-класс приложения
  */
