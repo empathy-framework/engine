@@ -34,4 +34,11 @@ class Form extends Control
 
 		else $this->setProperty ('ClientSize', EngineAdditions::uncoupleSelector ($size));
 	}
+
+	public function loadIcon (string $file)
+	{
+		$icon = VoidCore::createObject ('System.Drawing.Icon', 'System.Drawing', $file);
+
+		$this->setProperty ('Icon', $icon);
+	}
 }
